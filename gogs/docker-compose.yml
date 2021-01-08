@@ -1,0 +1,11 @@
+version: "3"
+services:
+  gogs:
+    restart: unless-stopped # 自动重启
+    image: gogs/gogs
+    container_name: gogs
+    ports:
+      - "6022:22" # ssh 端口
+      - "6023:3000" # Web 访问端口
+    volumes:
+      - ./data:/data
