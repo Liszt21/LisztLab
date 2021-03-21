@@ -4,6 +4,6 @@ services:
     build: .
     container_name: jupyter
     ports:
-      - "8888:8888" # ssh 端口
+      - "15751:15751" # ssh 端口
     volumes:
-      - ./notebook:/notebook
+      - ./notebook:/home/liszt/notebook

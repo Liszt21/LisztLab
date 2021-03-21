@@ -8,6 +8,6 @@ USER liszt
 COPY ./jupyter_lab_config.py /home/liszt/.jupyter/jupyter_lab_config.py
 WORKDIR /home/liszt/notebook
 VOLUME /home/liszt/notebook
-EXPOSE 8888
+EXPOSE 15751
 
 CMD [ "jupyter", "lab" ]

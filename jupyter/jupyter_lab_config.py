@@ -687,7 +687,7 @@ c.ServerApp.ip = '0.0.0.0'
 #  module, unless it is overridden using the --browser (ServerApp.browser)
 #  configuration option.
 #  Default: False
-# c.ServerApp.open_browser = False
+c.ServerApp.open_browser = False
 
 ## Hashed password to use for web authentication.
 #  
@@ -697,7 +697,7 @@ c.ServerApp.ip = '0.0.0.0'
 #  
 #  The string should be of the form type:salt:hashed-password.
 #  Default: ''
-# c.ServerApp.password = ''
+c.ServerApp.password = 'sha1:37a4668820d9:5ee51812518f56ff213ebe18466123fec21c1b32'
 
 ## Forces users to use a password for the Jupyter server. This is useful in a
 #  multi user environment, for instance when everybody in the LAN can access each
@@ -710,7 +710,7 @@ c.ServerApp.ip = '0.0.0.0'
 
 ## The port the Jupyter server will listen on.
 #  Default: 8888
-# c.ServerApp.port = 8888
+c.ServerApp.port = 15751
 
 ## The number of additional ports to try if the specified port is not available.
 #  Default: 50
